@@ -1,13 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Layout from '@/components/layout/Layout';
+import HeroSection from '@/components/home/HeroSection';
+import WhoWeSupport from '@/components/home/WhoWeSupport';
+import CoreServices from '@/components/home/CoreServices';
+import USPs from '@/components/home/USPs';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <HeroSection />
+      <WhoWeSupport />
+      <CoreServices />
+      <USPs />
+      
+      {/* CTA Section */}
+      <section className="py-20 bg-blue-900 text-white">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Fund Operations?</h2>
+          <p className="text-xl mb-8 text-blue-100">
+            Join the leading RWA funds that trust OPSWORKS for their operational excellence
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100" asChild>
+              <Link to="/contact" className="flex items-center">
+                <ArrowRight className="mr-2" size={20} />
+                Schedule a Consultation
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900">
+              Learn More About Our Services
+            </Button>
+          </div>
+        </div>
+      </section>
+    </Layout>
   );
 };
 
