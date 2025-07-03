@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -146,7 +145,7 @@ const CaseStudies = () => {
                         <tr>
                           <td className="border p-2">SLA Adherence</td>
                           <td className="border p-2">N/A</td>
-                          <td className="border p-2 text-green-600 font-semibold">>98%</td>
+                          <td className="border p-2 text-green-600 font-semibold">&gt;98%</td>
                         </tr>
                         <tr>
                           <td className="border p-2">Investor Satisfaction</td>
