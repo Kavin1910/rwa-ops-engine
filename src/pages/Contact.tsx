@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -32,7 +31,7 @@ const Contact = () => {
             <div>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Schedule a Consultation</CardTitle>
+                  <CardTitle className="text-2xl">Schedule a Consultation</CardTitle>  
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -112,9 +111,8 @@ const Contact = () => {
                     <div>
                       <h4 className="font-medium">Offices</h4>
                       <p className="text-gray-600">
-                        New York, NY<br />
-                        London, UK<br />
-                        Singapore
+                        St. Louis, Missouri, United States<br />
+                        Bangalore, Karnataka, India
                       </p>
                     </div>
                   </div>

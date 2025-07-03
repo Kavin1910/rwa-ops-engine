@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <img 
-              src="/lovable-uploads/opsworks-logo.png" 
+              src="/lovable-uploads/29678352-e40b-4368-ba50-48f3259dcfe7.png" 
               alt="OPSWORKS" 
-              className="h-12 mb-4"
+              className="h-12 mb-4 filter brightness-0 invert"
             />
             <p className="text-gray-300 mb-4 max-w-md">
               Bringing institutional-grade operations to the forefront of tokenized finance.

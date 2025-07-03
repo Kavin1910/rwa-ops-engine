@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -34,7 +33,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/">
               <img 
-                src="/lovable-uploads/opsworks-logo.png" 
+                src="/lovable-uploads/29678352-e40b-4368-ba50-48f3259dcfe7.png" 
                 alt="OPSWORKS" 
                 className="h-8"
               />
