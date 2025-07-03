@@ -11,8 +11,9 @@ import { ArrowRight } from 'lucide-react';
 const Index = () => {
   const handleDownloadCapabilities = () => {
     const link = document.createElement('a');
-    link.href = '/capability_deck.pptx';
+    link.href = 'https://raw.githubusercontent.com/your-username/your-repo/main/capability_deck.pptx';
     link.download = 'OPSWORKS_Capabilities_Deck.pptx';
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -22,7 +23,9 @@ const Index = () => {
     <Layout>
       <HeroSection />
       <WhoWeSupport />
-      <CoreServices />
+      <div id="core-services">
+        <CoreServices />
+      </div>
       <USPs />
       
       {/* CTA Section */}

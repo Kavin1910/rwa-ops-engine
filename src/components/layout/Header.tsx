@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -12,6 +13,7 @@ const Header = () => {
     { name: 'Services', href: '/services' },
     { name: 'About', href: '/about' },
     { name: 'Case Studies', href: '/case-studies' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -19,8 +21,9 @@ const Header = () => {
 
   const handleDownloadCapabilities = () => {
     const link = document.createElement('a');
-    link.href = '/capability_deck.pptx';
+    link.href = 'https://raw.githubusercontent.com/your-username/your-repo/main/capability_deck.pptx';
     link.download = 'OPSWORKS_Capabilities_Deck.pptx';
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -59,7 +62,7 @@ const Header = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" asChild>
-              <Link to="/contact">Book a Consultation</Link>
+              <Link to="/contact">Book a Calendar</Link>
             </Button>
             <Button onClick={handleDownloadCapabilities} className="bg-blue-600 hover:bg-blue-700">
               Download Capabilities Deck
@@ -97,7 +100,7 @@ const Header = () => {
               ))}
               <div className="pt-4 space-y-2">
                 <Button variant="outline" className="w-full" asChild>
-                  <Link to="/contact">Book a Consultation</Link>
+                  <Link to="/contact">Book a Calendar</Link>
                 </Button>
                 <Button 
                   onClick={handleDownloadCapabilities} 

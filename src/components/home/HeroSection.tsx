@@ -6,8 +6,9 @@ import { ArrowRight, Download } from 'lucide-react';
 const HeroSection = () => {
   const handleDownloadCapabilities = () => {
     const link = document.createElement('a');
-    link.href = '/capability_deck.pptx';
+    link.href = 'https://raw.githubusercontent.com/your-username/your-repo/main/capability_deck.pptx';
     link.download = 'OPSWORKS_Capabilities_Deck.pptx';
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -29,7 +30,7 @@ const HeroSection = () => {
             <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 border-2 border-white" asChild>
               <Link to="/contact" className="flex items-center">
                 <ArrowRight className="mr-2" size={20} />
-                Book a Consultation
+                Book a Calendar
               </Link>
             </Button>
             <Button 
