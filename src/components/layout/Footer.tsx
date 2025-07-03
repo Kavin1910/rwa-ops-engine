@@ -8,7 +8,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">OPSWORKS</h3>
+            <img 
+              src="/lovable-uploads/c1c980ae-5566-4c96-a3b0-c5a7931eb002.png" 
+              alt="OPSWORKS" 
+              className="h-12 mb-4"
+            />
             <p className="text-gray-300 mb-4 max-w-md">
               Bringing institutional-grade operations to the forefront of tokenized finance.
               Specialized back-office operations for on-chain and traditional RWA funds.
@@ -24,7 +28,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin size={16} />
-                <span className="text-gray-300">New York, NY | London, UK | Singapore</span>
+                <span className="text-gray-300">St. Louis, Missouri, United States | Bangalore, Karnataka, India</span>
               </div>
             </div>
           </div>
@@ -44,8 +48,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-gray-300">
               <li><Link to="/about" className="hover:text-white">About Us</Link></li>
+              <li><Link to="/case-studies" className="hover:text-white">Case Studies</Link></li>
               <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
-              <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+              <li><Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
               <li><a href="#" className="hover:text-white">Terms of Service</a></li>
             </ul>
           </div>

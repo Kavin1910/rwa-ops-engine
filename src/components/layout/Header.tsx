@@ -12,6 +12,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'About', href: '/about' },
+    { name: 'Case Studies', href: '/case-studies' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -22,8 +23,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-blue-900">
-              OPSWORKS
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/c1c980ae-5566-4c96-a3b0-c5a7931eb002.png" 
+                alt="OPSWORKS" 
+                className="h-8"
+              />
             </Link>
           </div>
 
