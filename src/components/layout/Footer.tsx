@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
@@ -9,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <img 
-              src="/lovable-uploads/c1c980ae-5566-4c96-a3b0-c5a7931eb002.png" 
+              src="/lovable-uploads/opsworks-logo.png" 
               alt="OPSWORKS" 
               className="h-12 mb-4"
             />
@@ -57,7 +56,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 OPSWORKS. All rights reserved.</p>
+          <p>&copy; 2025 OPSWORKS. All rights reserved.</p>
         </div>
       </div>
     </footer>

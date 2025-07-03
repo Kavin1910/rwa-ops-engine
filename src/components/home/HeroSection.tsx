@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Download } from 'lucide-react';
 
 const HeroSection = () => {
+  const handleDownloadCapabilities = () => {
+    const link = document.createElement('a');
+    link.href = '/capability_deck.pptx';
+    link.download = 'OPSWORKS_Capabilities_Deck.pptx';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="relative bg-gradient-to-r from-blue-900 to-blue-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -23,7 +32,12 @@ const HeroSection = () => {
                 Book a Consultation
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-blue-900"
+              onClick={handleDownloadCapabilities}
+            >
               <Download className="mr-2" size={20} />
               Download Capabilities Deck
             </Button>

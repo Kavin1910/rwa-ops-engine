@@ -9,6 +9,15 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const Index = () => {
+  const handleDownloadCapabilities = () => {
+    const link = document.createElement('a');
+    link.href = '/capability_deck.pptx';
+    link.download = 'OPSWORKS_Capabilities_Deck.pptx';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <Layout>
       <HeroSection />
@@ -30,7 +39,12 @@ const Index = () => {
                 Schedule a Consultation
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-blue-900"
+              onClick={handleDownloadCapabilities}
+            >
               Learn More About Our Services
             </Button>
           </div>

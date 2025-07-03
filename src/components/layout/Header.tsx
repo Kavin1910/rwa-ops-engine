@@ -18,6 +18,15 @@ const Header = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const handleDownloadCapabilities = () => {
+    const link = document.createElement('a');
+    link.href = '/capability_deck.pptx';
+    link.download = 'OPSWORKS_Capabilities_Deck.pptx';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,7 +34,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/">
               <img 
-                src="/lovable-uploads/c1c980ae-5566-4c96-a3b0-c5a7931eb002.png" 
+                src="/lovable-uploads/opsworks-logo.png" 
                 alt="OPSWORKS" 
                 className="h-8"
               />
@@ -53,10 +62,8 @@ const Header = () => {
             <Button variant="outline" asChild>
               <Link to="/contact">Book a Consultation</Link>
             </Button>
-            <Button asChild>
-              <a href="#" className="bg-blue-600 hover:bg-blue-700">
-                Download Capabilities Deck
-              </a>
+            <Button onClick={handleDownloadCapabilities} className="bg-blue-600 hover:bg-blue-700">
+              Download Capabilities Deck
             </Button>
           </div>
 
@@ -93,7 +100,10 @@ const Header = () => {
                 <Button variant="outline" className="w-full" asChild>
                   <Link to="/contact">Book a Consultation</Link>
                 </Button>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button 
+                  onClick={handleDownloadCapabilities} 
+                  className="w-full bg-blue-600 hover:bg-blue-700"
+                >
                   Download Capabilities Deck
                 </Button>
               </div>
