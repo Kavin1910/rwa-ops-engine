@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
@@ -10,7 +11,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/29678352-e40b-4368-ba50-48f3259dcfe7.png" 
               alt="OPSWORKS" 
-              className="h-12 mb-4 filter brightness-0 invert"
+              className="h-12 mb-4 bg-white px-2 py-1 rounded"
             />
             <p className="text-gray-300 mb-4 max-w-md">
               Bringing institutional-grade operations to the forefront of tokenized finance.

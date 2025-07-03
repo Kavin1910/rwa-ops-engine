@@ -26,7 +26,7 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100" asChild>
+            <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 border-2 border-white" asChild>
               <Link to="/contact" className="flex items-center">
                 <ArrowRight className="mr-2" size={20} />
                 Book a Consultation
@@ -34,8 +34,7 @@ const HeroSection = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-blue-900"
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900"
               onClick={handleDownloadCapabilities}
             >
               <Download className="mr-2" size={20} />
