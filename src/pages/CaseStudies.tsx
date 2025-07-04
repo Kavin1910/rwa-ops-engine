@@ -1,3 +1,4 @@
+
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -104,10 +105,10 @@ const CaseStudies = () => {
                     <div>
                       <h4 className="font-semibold text-blue-600">Tools & Tech Stack</h4>
                       <div className="text-sm space-y-1 mt-2">
-                        <p><strong>Compliance:</strong> [Platform-specific tools]</p>
-                        <p><strong>Custody & Treasury:</strong> [Integration systems]</p>
-                        <p><strong>Accounting:</strong> [Financial reporting tools]</p>
-                        <p><strong>Chain Monitoring:</strong> [Blockchain analytics]</p>
+                        <p><strong>Compliance:</strong></p>
+                        <p><strong>Custody & Treasury:</strong></p>
+                        <p><strong>Accounting:</strong></p>
+                        <p><strong>Chain Monitoring:</strong></p>
                       </div>
                     </div>
                   </div>
@@ -144,7 +145,7 @@ const CaseStudies = () => {
                         </tr>
                         <tr>
                           <td className="border p-2">SLA Adherence</td>
-                          <td className="border p-2">N/A</td>
+                          <td className="border p-2">NA</td>
                           <td className="border p-2 text-green-600 font-semibold">&gt;98%</td>
                         </tr>
                         <tr>
