@@ -1,65 +1,89 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle, Calculator, Shield, FileText, DollarSign, Users, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Shield, TrendingUp, Users, FileText, BarChart3, Cog } from 'lucide-react';
 
 const CoreServices = () => {
   const services = [
     {
-      icon: Calculator,
-      title: 'Daily NAV Calculation',
-      description: 'Precise net asset value computation with real-time market data integration'
+      icon: Shield,
+      title: 'Fund Administration',
+      description: 'Complete back-office support including investor relations, capital calls, distributions, and regulatory reporting.',
+      href: null
     },
     {
-      icon: Shield,
+      icon: TrendingUp,
       title: 'Custody Reconciliation',
-      description: 'Comprehensive asset reconciliation across multiple custodians and platforms'
+      description: 'Automated reconciliation between on-chain tokens and off-chain assets with real-time monitoring and compliance.',
+      href: '/custody-reconciliation'
+    },
+    {
+      icon: Users,
+      title: 'Investor Services',
+      description: 'KYC/AML compliance, investor onboarding, reporting, and ongoing relationship management.',
+      href: null
     },
     {
       icon: FileText,
-      title: 'Investor Reporting',
-      description: 'Professional-grade reports with customizable dashboards and analytics'
+      title: 'Regulatory Compliance',
+      description: 'SEC, CFTC, and international regulatory filing support with ongoing compliance monitoring.',
+      href: null
     },
     {
-      icon: DollarSign,
-      title: 'Capital Calls & Distributions',
-      description: 'Automated capital management and investor distribution workflows'
+      icon: BarChart3,
+      title: 'Financial Reporting',
+      description: 'GAAP-compliant financial statements, investor reports, and performance analytics.',
+      href: null
     },
     {
-      icon: CheckCircle,
-      title: 'Compliance & Regulatory Reporting',
-      description: 'Full regulatory compliance across global jurisdictions and frameworks'
-    },
-    {
-      icon: Zap,
-      title: 'Audit Support',
-      description: 'Comprehensive audit preparation and coordination with external auditors'
+      icon: Cog,
+      title: 'Technology Integration',
+      description: 'Seamless integration with blockchain infrastructure, custody solutions, and existing systems.',
+      href: null
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Core Services</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Core Services
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            End-to-end operational support designed specifically for RWA funds and tokenized assets
+            Comprehensive operational support tailored for Real-World Asset tokenization platforms
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                  <service.icon className="text-blue-600" size={24} />
-                </div>
-                <CardTitle className="text-lg">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">{service.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            const ServiceCard = (
+              <Card className={`h-full transition-all duration-300 ${
+                service.href ? 'hover:shadow-lg hover:scale-105 cursor-pointer' : 'hover:shadow-md'
+              }`}>
+                <CardHeader>
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <CardTitle className="text-xl font-semibold">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">{service.description}</p>
+                </CardContent>
+              </Card>
+            );
+
+            return service.href ? (
+              <Link key={index} to={service.href}>
+                {ServiceCard}
+              </Link>
+            ) : (
+              <div key={index}>
+                {ServiceCard}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
