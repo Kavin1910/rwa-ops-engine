@@ -10,6 +10,10 @@ const Footer = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -18,7 +22,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/29678352-e40b-4368-ba50-48f3259dcfe7.png" 
               alt="OPSWORKS" 
-              className="h-12 mb-4 bg-white px-2 py-1 rounded"
+              className="h-12 mb-4 filter invert"
             />
             <p className="text-gray-300 mb-4 max-w-md">
               Bringing institutional-grade operations to the forefront of tokenized finance.
@@ -72,11 +76,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><Link to="/about" className="hover:text-white">About Us</Link></li>
-              <li><Link to="/case-studies" className="hover:text-white">Case Studies</Link></li>
-              <li><Link to="/blog" className="hover:text-white">Blog</Link></li>
-              <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
-              <li><Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
+              <li><Link to="/about" className="hover:text-white" onClick={scrollToTop}>About Us</Link></li>
+              <li><Link to="/case-studies" className="hover:text-white" onClick={scrollToTop}>Case Studies</Link></li>
+              <li><Link to="/blog" className="hover:text-white" onClick={scrollToTop}>Blog</Link></li>
+              <li><Link to="/contact" className="hover:text-white" onClick={scrollToTop}>Contact</Link></li>
+              <li><Link to="/privacy-policy" className="hover:text-white" onClick={scrollToTop}>Privacy Policy</Link></li>
               <li><a href="#" className="hover:text-white">Terms of Service</a></li>
             </ul>
           </div>

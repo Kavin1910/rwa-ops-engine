@@ -21,9 +21,8 @@ const Header = () => {
 
   const handleDownloadCapabilities = () => {
     const link = document.createElement('a');
-    link.href = 'https://raw.githubusercontent.com/your-username/your-repo/main/capability_deck.pptx';
+    link.href = '/capability_deck.pptx';
     link.download = 'OPSWORKS_Capabilities_Deck.pptx';
-    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -44,7 +43,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -60,11 +59,11 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" asChild>
+          <div className="hidden md:flex items-center space-x-3">
+            <Button variant="outline" size="sm" asChild>
               <Link to="/contact">Book a Calendar</Link>
             </Button>
-            <Button onClick={handleDownloadCapabilities} className="bg-blue-600 hover:bg-blue-700">
+            <Button onClick={handleDownloadCapabilities} size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
               Download Capabilities Deck
             </Button>
           </div>

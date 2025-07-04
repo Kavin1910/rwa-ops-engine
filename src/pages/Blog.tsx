@@ -22,7 +22,7 @@ const Blog = () => {
               <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
                 <div className="flex items-center space-x-1">
                   <Calendar size={16} />
-                  <span>December 15, 2024</span>
+                  <span>June 30, 2025</span>
                 </div>
                 <div className="flex items-center space-x-1">
                   <User size={16} />
