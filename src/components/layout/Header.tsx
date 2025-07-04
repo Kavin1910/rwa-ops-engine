@@ -12,8 +12,6 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'About', href: '/about' },
-    { name: 'Case Studies', href: '/case-studies' },
-    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -21,7 +19,7 @@ const Header = () => {
 
   const handleDownloadCapabilities = () => {
     const link = document.createElement('a');
-    link.href = '/capability_deck.pptx';
+    link.href = 'https://raw.githubusercontent.com/your-repo/main/capability_deck.pptx';
     link.download = 'OPSWORKS_Capabilities_Deck.pptx';
     document.body.appendChild(link);
     link.click();
@@ -43,7 +41,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -59,9 +57,9 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm" asChild>
-              <Link to="/contact">Book a Calendar</Link>
+              <Link to="/contact">Block my Calendar</Link>
             </Button>
             <Button onClick={handleDownloadCapabilities} size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
               Download Capabilities Deck
@@ -99,7 +97,7 @@ const Header = () => {
               ))}
               <div className="pt-4 space-y-2">
                 <Button variant="outline" className="w-full" asChild>
-                  <Link to="/contact">Book a Calendar</Link>
+                  <Link to="/contact">Block my Calendar</Link>
                 </Button>
                 <Button 
                   onClick={handleDownloadCapabilities} 
