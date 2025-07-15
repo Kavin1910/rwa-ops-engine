@@ -81,7 +81,7 @@ const Footer = () => {
               <li><Link to="/blog" className="hover:text-white" onClick={scrollToTop}>Blog</Link></li>
               <li><Link to="/contact" className="hover:text-white" onClick={scrollToTop}>Contact</Link></li>
               <li><Link to="/privacy-policy" className="hover:text-white" onClick={scrollToTop}>Privacy Policy</Link></li>
-              <li><a href="#" className="hover:text-white">Terms of Service</a></li>
+              <li><Link to="/terms-of-service" className="hover:text-white" onClick={scrollToTop}>Terms of Service</Link></li>
             </ul>
           </div>
         </div>

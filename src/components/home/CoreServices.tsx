@@ -9,7 +9,7 @@ const CoreServices = () => {
       icon: Shield,
       title: 'Fund Administration',
       description: 'Complete back-office support including investor relations, capital calls, distributions, and regulatory reporting.',
-      href: null
+      href: '/fund-administration'
     },
     {
       icon: TrendingUp,
@@ -21,25 +21,25 @@ const CoreServices = () => {
       icon: Users,
       title: 'Investor Services',
       description: 'KYC/AML compliance, investor onboarding, reporting, and ongoing relationship management.',
-      href: null
+      href: '/investor-services'
     },
     {
       icon: FileText,
       title: 'Regulatory Compliance',
       description: 'SEC, CFTC, and international regulatory filing support with ongoing compliance monitoring.',
-      href: null
+      href: '/regulatory-compliance'
     },
     {
       icon: BarChart3,
       title: 'Financial Reporting',
       description: 'GAAP-compliant financial statements, investor reports, and performance analytics.',
-      href: null
+      href: '/financial-reporting'
     },
     {
       icon: Cog,
       title: 'Technology Integration',
       description: 'Seamless integration with blockchain infrastructure, custody solutions, and existing systems.',
-      href: null
+      href: '/technology-integration'
     }
   ];
 
