@@ -6,8 +6,8 @@ import { ArrowRight, Download } from 'lucide-react';
 const HeroSection = () => {
   const handleDownloadCapabilities = () => {
     const link = document.createElement('a');
-    link.href = '/capability_deck.pptx';
-    link.download = 'OPSWORKS_Capabilities_Deck.pptx';
+    link.href = '/Empowering-the-Future-of-Tokenized-Assets.pdf';
+    link.download = 'Empowering-the-Future-of-Tokenized-Assets.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
