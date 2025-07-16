@@ -184,7 +184,7 @@ const PrivacyPolicy = () => {
             </CardHeader>
             <CardContent className="prose max-w-none">
               <p>
-                For questions about this policy or personal data we hold, email us at <a href="mailto:contact@opsworks.org" className="text-blue-600 hover:underline">contact@opsworks.io</a>.
+                For questions about this policy or personal data we hold, email us at <a href="mailto:contact@opsworks.org" className="text-blue-600 hover:underline">contact@opsworks.org</a>.
               </p>
             </CardContent>
           </Card>
