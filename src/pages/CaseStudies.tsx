@@ -101,16 +101,6 @@ const CaseStudies = () => {
                         <li>Automated alerts for anomalies or compliance breaches</li>
                       </ul>
                     </div>
-                    
-                    <div>
-                      <h4 className="font-semibold text-blue-600">Tools & Tech Stack</h4>
-                      <div className="text-sm space-y-1 mt-2">
-                        <p><strong>Compliance:</strong></p>
-                        <p><strong>Custody & Treasury:</strong></p>
-                        <p><strong>Accounting:</strong></p>
-                        <p><strong>Chain Monitoring:</strong></p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
