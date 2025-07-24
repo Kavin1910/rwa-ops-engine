@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -208,7 +207,7 @@ const TermsOfService = () => {
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-gray-600">Late payments incur interest of [X]% per annum.</span>
+                  <span className="text-gray-600">Late payments incur interest of 5% per annum.</span>
                 </div>
               </div>
             </CardContent>
@@ -305,11 +304,11 @@ const TermsOfService = () => {
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-gray-600">Governed by laws of [Location].</span>
+                  <span className="text-gray-600">Governed by laws of the State of Missouri.</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-gray-600">Disputes will first seek informal resolution; if unresolved, referred to arbitration under Indian Arbitration & Conciliation Act, with seat in [Location].</span>
+                  <span className="text-gray-600">Disputes will first seek informal resolution; if unresolved, referred to arbitration under Indian Arbitration & Conciliation Act, with seat in State of Missouri.</span>
                 </div>
               </div>
             </CardContent>
