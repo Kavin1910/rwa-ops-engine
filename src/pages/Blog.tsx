@@ -17,6 +17,161 @@ const Blog = () => {
 
       <div className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Featured Blog Post */}
+          <Card className="mb-12">
+            <CardHeader>
+              <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
+                <div className="flex items-center space-x-1">
+                  <Calendar size={16} />
+                  <span>July 24, 2025</span>
+                </div>
+                <div className="flex items-center space-x-1">
+                  <User size={16} />
+                  <span>OPSWORKS Team</span>
+                </div>
+              </div>
+              <CardTitle className="text-3xl font-bold mb-4">
+                Why Frontend Non-Tech Ops Are the Unsung Hero of RWA Tokenization Platforms
+              </CardTitle>
+              <p className="text-lg text-gray-600 mb-4">
+                Featuring OPSworks LLC – A Pioneer in Frontend Fund Operations Support
+              </p>
+            </CardHeader>
+            <CardContent className="prose max-w-none">
+              <p className="text-gray-600 mb-6">
+                In the booming space of Real-World Asset (RWA) tokenization—where institutions are wrapping Treasuries, private credit, and real estate into blockchain-based tokens—the headlines are dominated by protocol innovations, regulatory breakthroughs, and smart contract security. But behind every seamless user interaction and compliant transaction lies an often-overlooked engine: <strong>Frontend Non-Tech Operations</strong>.
+              </p>
+              <p className="text-gray-600 mb-6">
+                These are the teams handling the day-to-day business operations that ensure tokenized asset platforms run smoothly for investors, fund managers, and compliance officers alike.
+              </p>
+              <p className="text-gray-600 mb-6">
+                At the forefront of this critical, behind-the-scenes layer is <strong>OPSworks LLC</strong>, a specialized operations partner helping leading RWA platforms deliver scalable and compliant user experiences.
+              </p>
+
+              <h2 className="text-2xl font-semibold mb-4">What are Frontend Non-Tech Ops in RWA?</h2>
+              <p className="text-gray-600 mb-4">
+                Frontend Non-Tech Ops refers to the people, processes, and workflows that support investor-facing activities, including:
+              </p>
+              <ul className="list-disc pl-8 mb-6 space-y-2">
+                <li>Investor onboarding & KYC processing</li>
+                <li>Customer success & user queries</li>
+                <li>Transaction coordination & issue resolution</li>
+                <li>Reporting support (NAV, distribution, redemptions)</li>
+                <li>Reconciliation of investor actions with blockchain records</li>
+                <li>Regulatory documentation coordination</li>
+                <li>Quality assurance for frontend content, UI flows, and data accuracy</li>
+              </ul>
+              <p className="text-gray-600 mb-6">
+                These teams don't write code—but they make the product work for real users and institutions.
+              </p>
+
+              <h2 className="text-2xl font-semibold mb-4">Why Are They Mission-Critical in RWA Platforms?</h2>
+              <p className="text-gray-600 mb-6">
+                Tokenizing a real-world asset isn't just about wrapping it in a smart contract. There are human touchpoints and operational flows that ensure legal, financial, and user-facing components align:
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3">Investor Trust Starts With Operational Reliability</h3>
+              <p className="text-gray-600 mb-4">
+                When a new investor joins an RWA fund, their first interaction isn't with the code—it's with the onboarding flow, the documentation, or a support ticket. Frontend Ops ensures:
+              </p>
+              <ul className="list-disc pl-8 mb-6 space-y-2">
+                <li>KYC/AML status updates and guidance</li>
+                <li>Helpdesk responses to wallet issues, network concerns, or document uploads</li>
+                <li>Clear communication of timelines for subscriptions or redemptions</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold mb-3">Non-Tech Ops Connect On-Chain Events to Real-World Processes</h3>
+              <p className="text-gray-600 mb-4">
+                Example: A user mints a tokenized Treasury. The frontend updates. But who:
+              </p>
+              <ul className="list-disc pl-8 mb-6 space-y-2">
+                <li>Reconciles this with fiat inflow?</li>
+                <li>Ensures the investor agreement is logged?</li>
+                <li>Answers queries about yield tracking?</li>
+              </ul>
+              <p className="text-gray-600 mb-6">
+                That's <strong>OPSWorks LLC</strong>.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3">Compliance and Audit-Readiness</h3>
+              <p className="text-gray-600 mb-4">
+                Whether it's FATF rules, SEC guidance, or local custodial norms, non-tech ops ensure:
+              </p>
+              <ul className="list-disc pl-8 mb-6 space-y-2">
+                <li>Correct investor classifications</li>
+                <li>Timely delivery of required disclosures</li>
+                <li>Coordination with legal, fund admin, and compliance partners</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold mb-3">Frontend Quality Control</h3>
+              <p className="text-gray-600 mb-6">
+                Errors in investor dashboards, incorrect APY figures, or broken claim buttons? Non-tech ops teams monitor and escalate UI/UX issues to tech, often serving as the first line of defense in preserving platform credibility.
+              </p>
+
+              <h2 className="text-2xl font-semibold mb-4">OPSworks LLC – The Backbone of Frontend Fund Operations</h2>
+              <p className="text-gray-600 mb-6">
+                OPSworks LLC has emerged as a go-to partner for RWA tokenization platforms seeking a ready-made, scalable, and secure non-tech operations team.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Their dedicated "Frontend Fund Ops Pods" handle:
+              </p>
+              <ul className="list-disc pl-8 mb-6 space-y-2">
+                <li>Investor lifecycle support (onboarding, KYC, issue resolution)</li>
+                <li>Transaction coordination with fund admin and custodians</li>
+                <li>Frontend QA and UAT testing</li>
+                <li>Ongoing investor support across time zones</li>
+                <li>Documentation and reporting coordination</li>
+                <li>Platform data validation and reconciliation</li>
+                <li>Escalation workflows with compliance/legal</li>
+              </ul>
+              <p className="text-gray-600 mb-6">
+                In short, they bridge the gap between blockchain engineers and real-world investor expectations.
+              </p>
+
+              <h2 className="text-2xl font-semibold mb-4">Use Cases Supported by OPSworks LLC</h2>
+              <ul className="list-disc pl-8 mb-6 space-y-2">
+                <li><strong>Tokenized Treasury Fund:</strong> Tracking redemptions, handling investor queries, and syncing data with custodians and fund admins.</li>
+                <li><strong>RWA tokenization Platforms:</strong> Supporting document uploads, KYC across jurisdictions, and capital call communications.</li>
+              </ul>
+
+              <h2 className="text-2xl font-semibold mb-4">Why This Matters Now</h2>
+              <p className="text-gray-600 mb-6">
+                As more institutional and retail investors explore RWA platforms, the demand for professional-grade investor operations will only grow. Without proper frontend non-tech ops:
+              </p>
+              <ul className="list-disc pl-8 mb-6 space-y-2">
+                <li>Investors drop off due to broken onboarding flows</li>
+                <li>Compliance risk increases with unmanaged workflows</li>
+                <li>Fund managers get overwhelmed with routine support</li>
+              </ul>
+              <p className="text-gray-600 mb-6">
+                OPSworks LLC ensures platforms stay scalable, compliant, and investor-friendly by embedding trained non-tech ops teams right at the heart of the user journey.
+              </p>
+
+              <h2 className="text-2xl font-semibold mb-4">Final Thoughts</h2>
+              <p className="text-gray-600 mb-6">
+                The future of finance is on-chain—but the present still relies on people, processes, and precision. Frontend Non-Tech Ops are the glue that holds RWA platforms together, making sure the tech innovations reach real investors in a reliable, human-centric way.
+              </p>
+              <p className="text-gray-600 mb-6">
+                OPSworks LLC is proving that operational excellence isn't just back office—it's front and center.
+              </p>
+
+              <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+                <h3 className="text-xl font-semibold mb-4">Want to learn how OPSworks LLC can support your RWA platform?</h3>
+                <p className="text-gray-600 mb-4">
+                  Reach out for a tailored walkthrough on how their Frontend Fund Ops Pods can help scale your user-facing operations with precision and compliance.
+                </p>
+                <a 
+                  href="/contact" 
+                  className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  Get in Touch
+                  <ArrowRight className="ml-2" size={16} />
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Previous Blog Post */}
           <Card className="mb-8">
             <CardHeader>
               <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
