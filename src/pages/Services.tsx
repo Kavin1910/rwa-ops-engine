@@ -1,57 +1,88 @@
-
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { Users, FileText, TrendingUp, DollarSign, HeadphonesIcon, UsersIcon } from 'lucide-react';
 
 const Services = () => {
-  const fundAdminServices = [
-    'Net Asset Value (NAV) Calculation: Daily, weekly, or monthly NAV computation based on asset valuation',
-    'Investor Accounting: Tracking individual investor contributions, redemptions, and returns',
-    'Fee Calculations: Management fees, performance fees (carried interest), and other expenses',
-    'Capital Calls and Distributions: Managing capital inflows and returns to investors'
+  const services = [
+    {
+      icon: Users,
+      title: 'Investor Onboarding & KYC',
+      description: 'Manual & automated onboarding support, partner integrations, whitelist management and status tracking',
+      link: '/investor-services'
+    },
+    {
+      icon: DollarSign,
+      title: 'Subscription and Redemption',
+      description: 'Secure collection and processing of investor capital, fund subscription flow execution, redemption and pay-out scheduling',
+      link: '/subscription-redemption'
+    },
+    {
+      icon: FileText,
+      title: 'Data, Reporting & Audit Readiness',
+      description: 'NAV updates, yield logs, investor dashboards, periodic compliance reports, spreadsheet delivery, fund admin coordination',
+      link: '/financial-reporting'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Finance & Accounting Services',
+      description: 'Accounts Payable (AP), Accounts Receivable (AR), banking transactions & reconciliation, payroll & employee expenses, financial statements & reporting',
+      link: '/financial-accounting'
+    },
+    {
+      icon: HeadphonesIcon,
+      title: 'Investor Relations & Front Desk Support',
+      description: 'Multilingual Tier 1 support, FAQs and documentation support, SLA-driven investor query resolution, global time zone coverage',
+      link: '/investor-relations'
+    },
+    {
+      icon: UsersIcon,
+      title: 'Staff Augmentation',
+      description: 'Technology staff augmentation, business & operations augmentation, specialized staff augmentation',
+      link: '/staff-augmentation'
+    }
   ];
 
-  const fundAccountingServices = [
-    'General Ledger Maintenance: Recording of all financial transactions',
-    'Expense Allocation: Allocation of fund-level expenses to investors',
-    'Portfolio Valuation: Mark-to-market of investments; pricing from third-party vendors',
-    'Financial Statement Preparation: For quarterly and annual reports'
+  const valueProps = [
+    {
+      feature: 'Built for RWA Tokenization',
+      advantage: 'Native to the nuances of real-world assets and blockchain'
+    },
+    {
+      feature: 'Full Ops Coverage',
+      advantage: 'From onboarding to audit readiness — all covered'
+    },
+    {
+      feature: 'Fast Setup',
+      advantage: 'Deployed in 72 hours; zero internal hiring needed'
+    },
+    {
+      feature: 'Tech-Agnostic',
+      advantage: 'Works across Ethereum & others'
+    },
+    {
+      feature: 'Human + Process Layer',
+      advantage: 'Real teams with operational SOPs, not just tools'
+    }
   ];
 
-  const custodyServices = [
-    'Asset Custody: Safekeeping of financial securities by a custodian bank',
-    'Trade Settlement: Processing buy/sell transactions, coordinating with brokers and custodians',
-    'Cash Management: Ensuring adequate liquidity for operations and redemptions'
-  ];
-
-  const complianceServices = [
-    'KYC/AML Checks: Know-Your-Customer and Anti-Money Laundering procedures for investors',
-    'Regulatory Filings: Submissions to regulators such as Form ADV, FATCA, AIF filings, etc.',
-    'Limit Monitoring: Ensuring compliance with investment guidelines and concentration limits'
-  ];
-
-  const investorServices = [
-    'Onboarding: Handling subscription documents, KYC, and investor due diligence',
-    'Investor Communications: Sending capital call notices, NAV statements, performance reports',
-    'Data Room Management: For private funds, managing a secure document-sharing platform for LPs'
-  ];
-
-  const technologyServices = [
-    'Fund Accounting Software Management',
-    'CRM Systems: Managing investor relationships and fundraising activities',
-    'Document Management: Secure storage and retrieval of contracts, reports, legal agreements'
-  ];
-
-  const riskServices = [
-    'Operational Risk Controls: Segregation of duties, audit trails',
-    'Investment Risk Monitoring: Track exposure, leverage, and liquidity',
-    'Cybersecurity: Protect sensitive financial and investor data'
-  ];
-
-  const taxServices = [
-    'Tax Reporting: Filing of returns, preparation of investor K-1s or tax statements',
-    'External Audit Coordination: Working with auditors to validate financial statements and NAVs',
-    'Transfer Pricing & Withholding Tax Management'
+  const engagementModels = [
+    {
+      plan: 'Launch Pod',
+      bestFor: 'MVPs, early-stage protocols',
+      includes: 'KYC, docs, investor onboarding'
+    },
+    {
+      plan: 'Growth Ops',
+      bestFor: 'Scaling platforms',
+      includes: 'Dedicated ops + Support'
+    },
+    {
+      plan: 'Institutional Ops Desk',
+      bestFor: 'Regulated issuers, funds',
+      includes: 'Full-service fund ops, SLA support, analytics'
+    }
   ];
 
   return (
@@ -60,169 +91,145 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Comprehensive operational solutions designed specifically for RWA funds and tokenized assets
+            Each service is modular — you can engage with us for a specific function or a full operations team.
           </p>
         </div>
       </div>
 
+      {/* Core Services */}
       <div className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Tabs defaultValue="fund-admin" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 lg:grid-cols-8 mb-8">
-              <TabsTrigger value="fund-admin">Fund Admin</TabsTrigger>
-              <TabsTrigger value="accounting">Accounting</TabsTrigger>
-              <TabsTrigger value="custody">Custody</TabsTrigger>
-              <TabsTrigger value="compliance">Compliance</TabsTrigger>
-              <TabsTrigger value="investor">Investor</TabsTrigger>
-              <TabsTrigger value="technology">Technology</TabsTrigger>
-              <TabsTrigger value="risk">Risk</TabsTrigger>
-              <TabsTrigger value="tax">Tax & Audit</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="fund-admin">
-              <Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            {services.map((service, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-2xl">Fund Administration</CardTitle>
+                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                    <service.icon className="text-blue-600" size={32} />
+                  </div>
+                  <CardTitle className="text-xl">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
-                    {fundAdminServices.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{service}</span>
-                      </li>
+                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <Button variant="outline" asChild>
+                    <Link to={service.link}>Learn More</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Value Proposition */}
+          <div className="mb-20">
+            <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Value Proposition</h2>
+            <div className="bg-gray-50 rounded-lg p-8">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b border-gray-200">
+                      <th className="text-left py-4 px-6 font-semibold text-gray-900">Feature</th>
+                      <th className="text-left py-4 px-6 font-semibold text-gray-900">OPSworks Advantage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {valueProps.map((prop, index) => (
+                      <tr key={index} className="border-b border-gray-100">
+                        <td className="py-4 px-6 font-medium text-gray-900">{prop.feature}</td>
+                        <td className="py-4 px-6 text-gray-600">{prop.advantage}</td>
+                      </tr>
                     ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {/* How It Works */}
+          <div className="mb-20">
+            <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">How It Works</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
+                    Kick-off & Process Mapping
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Intake your platform, fund, or protocol requirements</li>
+                    <li>• Build tailored SOPs and compliance flows</li>
+                    <li>• Assign a dedicated ops team</li>
                   </ul>
                 </CardContent>
               </Card>
-            </TabsContent>
 
-            <TabsContent value="accounting">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Fund Accounting</CardTitle>
+                  <CardTitle className="flex items-center">
+                    <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
+                    Ops Execution
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
-                    {fundAccountingServices.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{service}</span>
-                      </li>
-                    ))}
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Handle daily investor, compliance, and token flows</li>
+                    <li>• Coordinate with different teams</li>
+                    <li>• Track KPIs and SLA performance weekly</li>
                   </ul>
                 </CardContent>
               </Card>
-            </TabsContent>
 
-            <TabsContent value="custody">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Custody and Settlements</CardTitle>
+                  <CardTitle className="flex items-center">
+                    <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">3</span>
+                    Scale and Optimize
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
-                    {custodyServices.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{service}</span>
-                      </li>
-                    ))}
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Add more asset classes, investor types, or jurisdictions</li>
+                    <li>• Improve processes with automation/AI</li>
+                    <li>• Transition from MVP to Institutional Grade</li>
                   </ul>
                 </CardContent>
               </Card>
-            </TabsContent>
+            </div>
+          </div>
 
-            <TabsContent value="compliance">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl">Compliance and Regulatory Reporting</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    {complianceServices.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{service}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </TabsContent>
+          {/* Engagement Models */}
+          <div className="mb-20">
+            <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Engagement Models</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {engagementModels.map((model, index) => (
+                <Card key={index} className="text-center">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-blue-600">{model.plan}</CardTitle>
+                    <p className="text-gray-600">{model.bestFor}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">{model.includes}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
 
-            <TabsContent value="investor">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl">Investor Services</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    {investorServices.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{service}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="technology">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl">Technology and Data Management</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    {technologyServices.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{service}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="risk">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl">Risk Management and Internal Controls</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    {riskServices.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{service}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="tax">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl">Tax and Audit</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    {taxServices.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{service}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
+          {/* CTA Section */}
+          <div className="bg-blue-900 text-white rounded-lg p-12 text-center">
+            <h2 className="text-3xl font-bold mb-6">Ready to Scale Your Operations?</h2>
+            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+              Let us handle your operational complexity while you focus on growth and innovation.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100" asChild>
+                <Link to="/contact">Schedule a Discovery Call</Link>
+              </Button>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900" asChild>
+                <Link to="/case-studies">View Case Studies</Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>

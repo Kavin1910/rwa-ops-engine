@@ -6,40 +6,40 @@ import { Shield, TrendingUp, Users, FileText, BarChart3, Cog } from 'lucide-reac
 const CoreServices = () => {
   const services = [
     {
-      icon: Shield,
-      title: 'Fund Administration',
-      description: 'Complete back-office support including investor relations, capital calls, distributions, and regulatory reporting.',
-      href: '/fund-administration'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Custody Reconciliation',
-      description: 'Automated reconciliation between on-chain tokens and off-chain assets with real-time monitoring and compliance.',
-      href: '/custody-reconciliation'
-    },
-    {
       icon: Users,
-      title: 'Investor Services',
-      description: 'KYC/AML compliance, investor onboarding, reporting, and ongoing relationship management.',
+      title: 'Investor Onboarding & KYC',
+      description: 'Manual & automated onboarding support, partner integrations, whitelist management and status tracking.',
       href: '/investor-services'
     },
     {
-      icon: FileText,
-      title: 'Regulatory Compliance',
-      description: 'SEC, CFTC, and international regulatory filing support with ongoing compliance monitoring.',
-      href: '/regulatory-compliance'
+      icon: TrendingUp,
+      title: 'Subscription & Redemption',
+      description: 'Secure collection and processing of investor capital, fund subscription flow execution, redemption and pay-out scheduling.',
+      href: '/subscription-redemption'
     },
     {
-      icon: BarChart3,
-      title: 'Financial Reporting',
-      description: 'GAAP-compliant financial statements, investor reports, and performance analytics.',
+      icon: FileText,
+      title: 'Data, Reporting & Audit Readiness',
+      description: 'NAV updates, yield logs, investor dashboards, periodic compliance reports, spreadsheet delivery.',
       href: '/financial-reporting'
     },
     {
+      icon: BarChart3,
+      title: 'Finance & Accounting Services',
+      description: 'AP/AR, banking transactions & reconciliation, payroll & employee expenses, financial statements & reporting.',
+      href: '/financial-accounting'
+    },
+    {
+      icon: Shield,
+      title: 'Investor Relations & Support',
+      description: 'Multilingual Tier 1 support, FAQs and documentation support, SLA-driven query resolution, global coverage.',
+      href: '/investor-relations'
+    },
+    {
       icon: Cog,
-      title: 'Technology Integration',
-      description: 'Seamless integration with blockchain infrastructure, custody solutions, and existing systems.',
-      href: '/technology-integration'
+      title: 'Staff Augmentation',
+      description: 'Technology, business & operations, and specialized staff augmentation for scaling teams.',
+      href: '/staff-augmentation'
     }
   ];
 
@@ -48,10 +48,10 @@ const CoreServices = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Core Services
+            What We Do
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive operational support tailored for Real-World Asset tokenization platforms
+            Each service is modular — you can engage with us for a specific function or a full operations team
           </p>
         </div>
 

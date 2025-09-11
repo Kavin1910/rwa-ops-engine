@@ -18,18 +18,17 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Operational Excellence for RWA Tokenization
+            Ops-as-a-Service for Tokenized Asset Platforms
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
-            We specialize in back-office operations for on-chain and traditional RWA funds — 
-            delivering precision, transparency, and scale from day one.
+            We are your dedicated frontend operations team for RWA tokenization platforms. From investor onboarding to compliance workflows, OPSworks powers smooth, scalable, and secure non-technical operations.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 border-2 border-white" asChild>
               <Link to="/contact" className="flex items-center">
                 <ArrowRight className="mr-2" size={20} />
-                Book a Calendar
+                Schedule a Discovery Call
               </Link>
             </Button>
             <Button 
@@ -38,16 +37,15 @@ const HeroSection = () => {
               onClick={handleDownloadCapabilities}
             >
               <Download className="mr-2" size={20} />
-              Download Capabilities Deck
+              View Pitch Deck
+            </Button>
+            <Button size="lg" className="bg-blue-700 border-2 border-blue-600 text-white hover:bg-blue-600" asChild>
+              <Link to="/contact" className="flex items-center">
+                Contact Us
+              </Link>
             </Button>
           </div>
 
-          <div className="bg-blue-800/50 backdrop-blur-sm rounded-lg p-6">
-            <h2 className="text-2xl font-semibold mb-3">Our Mission:</h2>
-            <p className="text-lg text-blue-100">
-              Bringing institutional-grade operations to the forefront of tokenized finance.
-            </p>
-          </div>
         </div>
       </div>
     </section>

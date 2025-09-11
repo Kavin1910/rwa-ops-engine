@@ -6,23 +6,23 @@ const WhoWeSupport = () => {
   const clientTypes = [
     {
       icon: TrendingUp,
-      title: 'Tokenized Treasury Managers',
-      description: 'Supporting digital asset managers in tokenizing traditional treasury instruments'
+      title: 'Tokenization Start-ups',
+      description: 'Supporting emerging platforms launching tokenized asset offerings'
     },
     {
       icon: Building2,
-      title: 'Private Credit Funds',
-      description: 'Comprehensive operations for alternative lending and credit investment strategies'
+      title: 'Asset Managers',
+      description: 'Comprehensive operational support for traditional asset managers entering tokenization'
     },
     {
       icon: Home,
-      title: 'Real Estate & Infrastructure Issuers',
-      description: 'Specialized support for tokenized real estate and infrastructure investments'
+      title: 'Onchain Credit Protocols',
+      description: 'Specialized operations for blockchain-based lending and credit platforms'
     },
     {
       icon: Users,
-      title: 'DAO Treasury Teams',
-      description: 'Operational excellence for decentralized autonomous organization treasuries'
+      title: 'Digital Investment Platforms',
+      description: 'End-to-end operational support for digital investment and trading platforms'
     }
   ];
 
@@ -30,9 +30,9 @@ const WhoWeSupport = () => {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Who We Support</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Who We Work With</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We serve the full spectrum of RWA fund managers and tokenized asset issuers
+            We partner with innovative companies across the tokenization ecosystem
           </p>
         </div>
 

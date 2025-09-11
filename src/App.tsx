@@ -16,6 +16,10 @@ import RegulatoryCompliance from "./pages/RegulatoryCompliance";
 import FinancialReporting from "./pages/FinancialReporting";
 import TechnologyIntegration from "./pages/TechnologyIntegration";
 import FundAdministration from "./pages/FundAdministration";
+import SubscriptionRedemption from "./pages/SubscriptionRedemption";
+import FinancialAccounting from "./pages/FinancialAccounting";
+import InvestorRelations from "./pages/InvestorRelations";
+import StaffAugmentation from "./pages/StaffAugmentation";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
@@ -41,6 +45,10 @@ const App = () => (
           <Route path="/financial-reporting" element={<FinancialReporting />} />
           <Route path="/technology-integration" element={<TechnologyIntegration />} />
           <Route path="/fund-administration" element={<FundAdministration />} />
+          <Route path="/subscription-redemption" element={<SubscriptionRedemption />} />
+          <Route path="/financial-accounting" element={<FinancialAccounting />} />
+          <Route path="/investor-relations" element={<InvestorRelations />} />
+          <Route path="/staff-augmentation" element={<StaffAugmentation />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
