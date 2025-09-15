@@ -6,8 +6,8 @@ import { ArrowRight, Download } from 'lucide-react';
 const HeroSection = () => {
   const handleDownloadCapabilities = () => {
     const link = document.createElement('a');
-    link.href = '/Empowering-the-Future-of-Tokenized-Assets.pdf';
-    link.download = 'Empowering-the-Future-of-Tokenized-Assets.pdf';
+    link.href = '/Pitch deck - OpsWorks LLC.pptx';
+    link.download = 'Pitch deck - OpsWorks LLC.pptx';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -37,7 +37,7 @@ const HeroSection = () => {
               onClick={handleDownloadCapabilities}
             >
               <Download className="mr-2" size={20} />
-              View Pitch Deck
+              Download Capabilities Deck
             </Button>
             <Button size="lg" className="bg-blue-700 border-2 border-blue-600 text-white hover:bg-blue-600" asChild>
               <Link to="/contact" className="flex items-center">

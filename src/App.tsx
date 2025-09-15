@@ -12,8 +12,10 @@ import CaseStudies from "./pages/CaseStudies";
 import Blog from "./pages/Blog";
 import CustodyReconciliation from "./pages/CustodyReconciliation";
 import InvestorServices from "./pages/InvestorServices";
+import InvestorOnboarding from "./pages/InvestorOnboarding";
 import RegulatoryCompliance from "./pages/RegulatoryCompliance";
 import FinancialReporting from "./pages/FinancialReporting";
+import DataReporting from "./pages/DataReporting";
 import TechnologyIntegration from "./pages/TechnologyIntegration";
 import FundAdministration from "./pages/FundAdministration";
 import SubscriptionRedemption from "./pages/SubscriptionRedemption";
@@ -41,8 +43,10 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/custody-reconciliation" element={<CustodyReconciliation />} />
           <Route path="/investor-services" element={<InvestorServices />} />
+          <Route path="/investor-onboarding" element={<InvestorOnboarding />} />
           <Route path="/regulatory-compliance" element={<RegulatoryCompliance />} />
           <Route path="/financial-reporting" element={<FinancialReporting />} />
+          <Route path="/data-reporting" element={<DataReporting />} />
           <Route path="/technology-integration" element={<TechnologyIntegration />} />
           <Route path="/fund-administration" element={<FundAdministration />} />
           <Route path="/subscription-redemption" element={<SubscriptionRedemption />} />

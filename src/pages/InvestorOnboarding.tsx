@@ -2,58 +2,57 @@ import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Shield, TrendingUp, Calendar, CheckCircle } from 'lucide-react';
+import { Users, Link2, CheckCircle2, CheckCircle } from 'lucide-react';
 
-const SubscriptionRedemption = () => {
+const InvestorOnboarding = () => {
   const services = [
     {
-      icon: Shield,
-      title: 'Secure Collection and Processing of Investor Capital',
-      description: 'We manage the end-to-end intake of investor capital with security, compliance, and operational accuracy.',
+      icon: Users,
+      title: 'Manual & Automated Onboarding Support',
+      description: 'We handle the heavy lifting of investor onboarding, ensuring a smooth experience for both retail and institutional clients.',
       details: [
-        'Collect capital via bank transfers, stablecoins, or other approved rails',
-        'Perform compliance checks (AML, source of funds validation) before processing',
-        'Reconcile incoming payments against investor subscription instructions',
-        'Maintain a clear audit trail for regulators and fund administrators',
-        'Provide real-time reporting on subscription inflows'
+        'Support across both manual reviews (complex cases, high-risk profiles)',
+        'Form-fill assistance and investor guidance for high-net-worth and global clients',
+        'Ensure full compliance with KYC/AML standards while reducing friction',
+        'Handle exceptions and escalate only flagged cases to compliance teams'
       ],
       value: [
-        'Investor trust with transparent & secure handling of funds',
-        'Minimized risk of misallocations or delays',
-        'Automated reconciliation reduces manual errors'
+        'Faster onboarding → reduced drop-offs',
+        'Compliance-first → minimizes regulatory risk',
+        'Hybrid approach → automation efficiency + human oversight'
       ]
     },
     {
-      icon: TrendingUp,
-      title: 'Fund Subscription Flow Execution',
-      description: 'We streamline the entire subscription process, ensuring accuracy and timely execution across multiple investor types.',
+      icon: Link2,
+      title: 'Partner Integrations',
+      description: 'We integrate seamlessly with your preferred KYC, AML, and identity vendors so you don\'t have to manage multiple systems.',
       details: [
-        'Manage the end-to-end workflow from investor commitment → KYC clearance → capital confirmation → fund unit allocation',
-        'Provide status visibility to investors (pending, processed, confirmed)',
-        'Coordinate with fund administrators and custodians to ensure correct allocations',
-        'Handle exceptions, corrections, and last-mile investor communications'
+        'Connect with leading vendors',
+        'API-driven integrations for document verification and AML checks',
+        'Ensure data consistency between your CRM, investor portal, and compliance stack',
+        'Provide vendor management & monitoring so your team can focus on growth'
       ],
       value: [
-        'Faster onboarding of committed capital into active investments',
-        'Improved investor experience with real-time status updates',
-        'Reduced back-office workload for fund managers'
+        'Plug-and-play compliance stack',
+        'Scalable integrations → future-proof growth',
+        'Lower operational overhead for fund managers'
       ]
     },
     {
-      icon: Calendar,
-      title: 'Redemption and Pay-out Scheduling',
-      description: 'We ensure smooth, compliant, and timely redemptions for investors across global markets.',
+      icon: CheckCircle2,
+      title: 'Whitelist Management & Status Tracking',
+      description: 'We maintain accurate, real-time investor status to ensure only approved investors can participate in tokenized offerings.',
       details: [
-        'Accept and validate investor redemption requests',
-        'Schedule and process payouts in fiat or digital assets, aligned with fund policies',
-        'Ensure liquidity checks and compliance reviews before disbursement',
-        'Provide investor notifications & confirmations of redemption execution',
-        'Maintain a transparent log of all redemptions for audit and compliance'
+        'Maintain an active whitelist directly linked to your smart contracts',
+        'Track investor status (Pending → Under Review → Approved → Rejected)',
+        'Automate updates when KYC/AML verification is complete',
+        'Provide real-time dashboards & alerts for investor status changes',
+        'Secure handling of updates in compliance with regulatory standards'
       ],
       value: [
-        'Predictable and timely payouts → stronger investor trust',
-        'Reduced operational and liquidity risks',
-        'Transparent redemption reporting for investors and regulators'
+        'Prevent unauthorized participation',
+        'Transparent audit trail for regulators & auditors',
+        'Real-time investor visibility for operations teams'
       ]
     }
   ];
@@ -62,9 +61,9 @@ const SubscriptionRedemption = () => {
     <Layout>
       <div className="pt-20 pb-16 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6">Subscription & Redemption</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Efficient, transparent, and compliant handling of investor capital flows — from subscription to redemption.
+          <h1 className="text-5xl font-bold mb-6">Investor Onboarding & KYC</h1>
+          <p className="text-xl text-blue-100 max-w-4xl mx-auto">
+            Seamless, compliant, and scalable onboarding solutions purpose-built for digital investment platforms and tokenized assets.
           </p>
         </div>
       </div>
@@ -113,9 +112,9 @@ const SubscriptionRedemption = () => {
 
           {/* Summary Section */}
           <div className="bg-blue-900 text-white rounded-lg p-12 text-center">
-            <h2 className="text-3xl font-bold mb-6">Complete Capital Flow Management</h2>
+            <h2 className="text-3xl font-bold mb-6">Complete Onboarding Excellence</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
-              OPSworks ensures that subscriptions and redemptions — the most sensitive investor touchpoints — are handled with security, compliance, and operational excellence, allowing asset managers and platforms to focus on growth instead of back-office complexities.
+              With OPSworks handling Investor Onboarding & KYC, asset managers and digital platforms can launch faster, onboard globally, and remain compliant—without building a large in-house compliance operations team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100" asChild>
@@ -132,4 +131,4 @@ const SubscriptionRedemption = () => {
   );
 };
 
-export default SubscriptionRedemption;
+export default InvestorOnboarding;

@@ -24,8 +24,10 @@ const Footer = () => {
               className="h-12 mb-4 filter invert"
             />
             <p className="text-gray-300 mb-4 max-w-md">
-              Bringing institutional-grade operations to the forefront of tokenized finance.
-              Specialized back-office operations for on-chain and traditional RWA funds.
+              We are your dedicated frontend operations team for RWA tokenization platforms. From investor onboarding to compliance workflows, OPSworks powers smooth, scalable, and secure non-technical operations.
+            </p>
+            <p className="text-gray-300 mb-4 max-w-md text-sm">
+              24/6 Global Support
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center space-x-2">
@@ -33,12 +35,12 @@ const Footer = () => {
                 <span className="text-gray-300">contact@opsworks.org</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone size={16} />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">🌐</span>
+                <span className="text-gray-300">www.opsworks.org</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin size={16} />
-                <span className="text-gray-300">St. Louis, Missouri, United States | Bangalore, Karnataka, India</span>
+                <span className="text-gray-300">New York (HQ) | Bangalore (Delivery Center)</span>
               </div>
             </div>
             
@@ -64,11 +66,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><button onClick={() => scrollToSection('core-services')} className="hover:text-white text-left">Fund Administration</button></li>
-              <li><button onClick={() => scrollToSection('core-services')} className="hover:text-white text-left">Fund Accounting</button></li>
-              <li><button onClick={() => scrollToSection('core-services')} className="hover:text-white text-left">Compliance & Reporting</button></li>
-              <li><button onClick={() => scrollToSection('core-services')} className="hover:text-white text-left">Investor Services</button></li>
-              <li><button onClick={() => scrollToSection('core-services')} className="hover:text-white text-left">Technology Solutions</button></li>
+              <li><Link to="/investor-onboarding" className="hover:text-white text-left">Investor Onboarding & KYC</Link></li>
+              <li><Link to="/subscription-redemption" className="hover:text-white text-left">Subscription & Redemption</Link></li>
+              <li><Link to="/data-reporting" className="hover:text-white text-left">Data, Reporting & Audit Readiness</Link></li>
+              <li><Link to="/financial-accounting" className="hover:text-white text-left">Finance & Accounting Services</Link></li>
+              <li><Link to="/investor-relations" className="hover:text-white text-left">Investor Relations & Front Desk Support</Link></li>
+              <li><Link to="/staff-augmentation" className="hover:text-white text-left">Staff Augmentation</Link></li>
             </ul>
           </div>
 

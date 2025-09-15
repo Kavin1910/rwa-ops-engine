@@ -10,7 +10,7 @@ const Services = () => {
       icon: Users,
       title: 'Investor Onboarding & KYC',
       description: 'Manual & automated onboarding support, partner integrations, whitelist management and status tracking',
-      link: '/investor-services'
+      link: '/investor-onboarding'
     },
     {
       icon: DollarSign,
@@ -22,7 +22,7 @@ const Services = () => {
       icon: FileText,
       title: 'Data, Reporting & Audit Readiness',
       description: 'NAV updates, yield logs, investor dashboards, periodic compliance reports, spreadsheet delivery, fund admin coordination',
-      link: '/financial-reporting'
+      link: '/data-reporting'
     },
     {
       icon: TrendingUp,
