@@ -99,14 +99,6 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <Phone className="text-blue-600 mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Phone</h4>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
                     <MapPin className="text-blue-600 mt-1" size={20} />
                     <div>
                       <h4 className="font-medium">Offices</h4>
@@ -121,7 +113,7 @@ const Contact = () => {
                     <Clock className="text-blue-600 mt-1" size={20} />
                     <div>
                       <h4 className="font-medium">Support Hours</h4>
-                      <p className="text-gray-600">24/7 Global Support</p>
+                      <p className="text-gray-600">24/5 Global Support</p>
                     </div>
                   </div>
                 </CardContent>

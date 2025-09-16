@@ -51,7 +51,7 @@ const CoreServices = () => {
             What We Do
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Each service is modular — you can engage with us for a specific function or a full operations team
+            Each service is modular you can engage with us for a specific function or a full operations team
           </p>
         </div>
 

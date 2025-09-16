@@ -27,7 +27,7 @@ const Footer = () => {
               We are your dedicated frontend operations team for RWA tokenization platforms. From investor onboarding to compliance workflows, OPSworks powers smooth, scalable, and secure non-technical operations.
             </p>
             <p className="text-gray-300 mb-4 max-w-md text-sm">
-              24/6 Global Support
+              24/5 Global Support
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center space-x-2">

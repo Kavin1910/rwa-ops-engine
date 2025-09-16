@@ -40,7 +40,7 @@ const About = () => {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">About OPSworks LLC</h2>
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  OPSworks LLC is the first dedicated Ops-as-a-Service provider purpose-built for the tokenization of Real-World Assets (RWAs). We partner with asset managers, blockchain protocols, and digital investment platforms to streamline operational workflows, reduce compliance risk, and enable rapid scale—without the cost and complexity of building a full in-house operations team.
+                  OPSworks LLC is the first dedicated Ops-as-a-Service provider purpose-built for the tokenization of Real-World Assets (RWAs). We partner with asset managers, blockchain protocols, and digital investment platforms to streamline operational workflows, reduce compliance risk, and enable rapid scale without the cost and complexity of building a full in-house operations team.
                 </p>
                 <p>
                   Unlike traditional service providers, OPSworks focuses on the non-technical operations layer the critical bridge between your technology stack, your investors and stakeholders. We manage the processes that ensure smooth onboarding, transaction management, reporting, and investor communications, so you can stay focused on asset growth, liquidity, and innovation.
