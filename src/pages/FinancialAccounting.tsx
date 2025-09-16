@@ -94,7 +94,7 @@ const FinancialAccounting = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">Finance & Accounting Services</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            End-to-end finance and accounting support to keep your operations compliant, transparent, and investor-ready — without the overhead of a full in-house finance team.
+            End-to-end finance and accounting support to keep your operations compliant, transparent, and investor-ready without the overhead of a full in-house finance team.
           </p>
         </div>
       </div>

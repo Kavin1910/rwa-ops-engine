@@ -11,7 +11,7 @@ const USPs = () => {
     },
     {
       title: 'Transaction & Settlement Support',
-      description: 'Smooth execution and reconciliation across chains and banking rails.',
+      description: 'Smooth execution and reconciliation across chains and traditional financial services providers.',
       badge: 'Multi-Chain'
     },
     {

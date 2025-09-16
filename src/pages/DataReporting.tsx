@@ -39,7 +39,7 @@ const DataReporting = () => {
     },
     {
       icon: Table,
-      title: 'Spreadsheet Delivery',
+      title: 'Spreadsheet Preparation and Delivery',
       description: 'We meet fund managers where they are, ensuring compatibility with existing workflows.',
       details: [
         'Deliver reconciled data in spreadsheet-friendly formats (Excel/CSV)',

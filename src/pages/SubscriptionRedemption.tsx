@@ -64,7 +64,7 @@ const SubscriptionRedemption = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">Subscription & Redemption</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Efficient, transparent, and compliant handling of investor capital flows — from subscription to redemption.
+            Efficient, transparent, and compliant handling of investor capital flows from subscription to redemption.
           </p>
         </div>
       </div>
@@ -115,7 +115,7 @@ const SubscriptionRedemption = () => {
           <div className="bg-blue-900 text-white rounded-lg p-12 text-center">
             <h2 className="text-3xl font-bold mb-6">Complete Capital Flow Management</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
-              OPSworks ensures that subscriptions and redemptions — the most sensitive investor touchpoints — are handled with security, compliance, and operational excellence, allowing asset managers and platforms to focus on growth instead of back-office complexities.
+              OPSworks ensures that subscriptions and redemptions the most sensitive investor touchpoints are handled with security, compliance, and operational excellence, allowing asset managers and platforms to focus on growth instead of back-office complexities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100" asChild>

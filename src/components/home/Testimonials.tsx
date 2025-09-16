@@ -11,6 +11,16 @@ const Testimonials = () => {
       quote: "Their investor support is better than in-house. We scaled users without adding headcount.",
       author: "Head of Product, Tokenized Treasury Platform",
       company: "Digital Asset Management Firm"
+    },
+    {
+      quote: "As a lean start-up, we didn't have the expertise to set up compliant onboarding and fund operations. OPSworks plugged in seamlessly, letting us focus on product and capital raising while they handled the workflows.",
+      author: "Founder, Tokenization Start-up",
+      company: "Emerging RWA Platform"
+    },
+    {
+      quote: "Expanding into digital assets meant new compliance and reporting demands we weren't resourced for. OPSworks gave us scalable back-office strength, from subscriptions to reconciliations, without building a new department.",
+      author: "Managing Partner, Alternative Asset Manager",
+      company: "Traditional Asset Management Firm"
     }
   ];
 
@@ -24,7 +34,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-blue-800/50 border-blue-700">
               <CardContent className="p-8">

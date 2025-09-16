@@ -153,7 +153,7 @@ const InvestorRelations = () => {
           <div className="bg-blue-900 text-white rounded-lg p-12 text-center">
             <h2 className="text-3xl font-bold mb-6">World-Class Investor Experience</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
-              OPSworks transforms investor relations into a scalable, multilingual, and SLA-driven experience — ensuring investors feel supported, informed, and confident at every step of their journey.
+              OPSworks transforms investor relations into a scalable, multilingual, and SLA-driven experience ensuring investors feel supported, informed, and confident at every step of their journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100" asChild>

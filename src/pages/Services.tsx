@@ -21,7 +21,7 @@ const Services = () => {
     {
       icon: FileText,
       title: 'Data, Reporting & Audit Readiness',
-      description: 'NAV updates, yield logs, investor dashboards, periodic compliance reports, spreadsheet delivery, fund admin coordination',
+      description: 'NAV updates, yield logs, investor dashboards, periodic compliance reports, spreadsheet preparation and delivery, fund admin coordination',
       link: '/data-reporting'
     },
     {
@@ -51,7 +51,7 @@ const Services = () => {
     },
     {
       feature: 'Full Ops Coverage',
-      advantage: 'From onboarding to audit readiness — all covered'
+      advantage: 'From onboarding to audit readiness all covered'
     },
     {
       feature: 'Fast Setup',
@@ -91,7 +91,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Each service is modular — you can engage with us for a specific function or a full operations team.
+            Each service is modular you can engage with us for a specific function or a full operations team.
           </p>
         </div>
       </div>

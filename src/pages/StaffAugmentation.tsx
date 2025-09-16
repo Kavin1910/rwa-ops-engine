@@ -7,22 +7,6 @@ import { Code, Users, Award, CheckCircle } from 'lucide-react';
 const StaffAugmentation = () => {
   const services = [
     {
-      icon: Code,
-      title: 'Technology Staff Augmentation',
-      description: 'Extend your in-house technology capabilities with skilled professionals who integrate seamlessly into your team.',
-      details: [
-        'Hire blockchain, smart contract, and API integration specialists',
-        'Hire data engineers, BI analysts, and reporting experts for platform needs',
-        'Hire DevOps, QA, and automation support for system reliability',
-        'Align with your existing tech stack and development workflows'
-      ],
-      value: [
-        'Faster project execution without long hiring cycles',
-        'Flexible scaling of technical teams as projects demand',
-        'Cost-efficient access to specialized blockchain & platform expertise'
-      ]
-    },
-    {
       icon: Users,
       title: 'Business & Operations Augmentation',
       description: 'Strengthen your middle- and back-office functions with skilled professionals trained in fund operations, compliance, and investor servicing.',
@@ -36,22 +20,6 @@ const StaffAugmentation = () => {
         'Reduced operational bottlenecks with trained professionals',
         'Stronger compliance posture through skilled middle-office support',
         'Ability to scale investor servicing teams in line with fund growth'
-      ]
-    },
-    {
-      icon: Award,
-      title: 'Specialized Staff Augmentation',
-      description: 'Access niche expertise and on-demand professionals for complex, high-impact needs.',
-      details: [
-        'Suggest regulatory compliance consultants',
-        'Suggest RWA tokenization specialists for structuring and process alignment',
-        'Suggest finance transformation and digital asset accounting experts',
-        'Engage domain specialists for short-term projects or ongoing advisory roles'
-      ],
-      value: [
-        'Expert access without long-term headcount commitments',
-        'Faster execution of complex or regulated workflows',
-        'Enhanced investor and regulator confidence through specialist oversight'
       ]
     }
   ];
@@ -141,7 +109,7 @@ const StaffAugmentation = () => {
           <div className="bg-blue-900 text-white rounded-lg p-12 text-center">
             <h2 className="text-3xl font-bold mb-6">Agile Team Scaling</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
-              OPSworks Staff Augmentation gives you the agility to scale teams on-demand, access specialized expertise, and reduce hiring risks — ensuring you always have the right talent to meet your operational, compliance, and technology needs.
+              OPSworks Staff Augmentation gives you the agility to scale teams on-demand, access specialized expertise, and reduce hiring risks ensuring you always have the right talent to meet your operational, compliance, and technology needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100" asChild>

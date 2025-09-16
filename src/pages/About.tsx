@@ -43,14 +43,14 @@ const About = () => {
                   OPSworks LLC is the first dedicated Ops-as-a-Service provider purpose-built for the tokenization of Real-World Assets (RWAs). We partner with asset managers, blockchain protocols, and digital investment platforms to streamline operational workflows, reduce compliance risk, and enable rapid scale—without the cost and complexity of building a full in-house operations team.
                 </p>
                 <p>
-                  Unlike traditional service providers, OPSworks focuses on the non-technical operations layer—the critical bridge between your technology stack and your investors. We manage the processes that ensure smooth onboarding, transaction management, reporting, and investor communications, so you can stay focused on asset growth, liquidity, and innovation.
+                  Unlike traditional service providers, OPSworks focuses on the non-technical operations layer the critical bridge between your technology stack, your investors and stakeholders. We manage the processes that ensure smooth onboarding, transaction management, reporting, and investor communications, so you can stay focused on asset growth, liquidity, and innovation.
                 </p>
               </div>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">The OPSworks Advantage</h3>
               <p className="text-gray-600 mb-6">
-                We act as the operational backbone of RWA tokenization platforms—the missing middle layer that connects tech infrastructure (smart contracts, custody, exchanges) with investor-facing processes (onboarding, reporting and servicing).
+                We act as the operational backbone of RWA tokenization platforms the missing middle layer that connects tech infrastructure (smart contracts, custody, exchanges) with investor-facing processes (onboarding, reporting and servicing).
               </p>
               <p className="text-gray-600">
                 With OPSworks, clients gain a ready-made operations team, reducing launch times, eliminating operations headaches, and unlocking faster institutional adoption.
@@ -59,8 +59,29 @@ const About = () => {
           </div>
 
           <div className="mb-20">
+            <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">What We Do</h2>
+            <div className="bg-gray-50 rounded-lg p-8 mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Investor Onboarding & KYC/AML</h3>
+                  <p className="text-gray-600">Workflows + oversight to ensure compliance.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Transaction & Settlement Support</h3>
+                  <p className="text-gray-600">Smooth execution and reconciliation across chains and traditional financial services providers.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Fund Administration & Reporting</h3>
+                  <p className="text-gray-600">NAV calculations, investor reports, and dashboards.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Investor Relations Ops</h3>
+                  <p className="text-gray-600">Communication, updates, and servicing to improve retention and trust.</p>
+                </div>
+              </div>
+            </div>
             <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Why OPSworks?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {values.map((value, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-8 text-center">
@@ -72,6 +93,15 @@ const About = () => {
                   </CardContent>
                 </Card>
               ))}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 text-center">
+                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <Target className="text-blue-600" size={32} />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900">Scalable Partnership</h3>
+                  <p className="text-gray-600 leading-relaxed">Whether you're a growing protocol or a large asset manager, we align operations to your pace of growth.</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
 

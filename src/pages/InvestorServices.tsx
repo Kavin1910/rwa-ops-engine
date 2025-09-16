@@ -20,7 +20,7 @@ const InvestorServices = () => {
           <Card className="mb-8">
             <CardContent className="p-8">
               <p className="text-lg text-gray-600 mb-6">
-                As tokenization of real-world assets—from real estate to private equity—expands globally, RWA issuers must attract and retain investors seamlessly. Back-office support firms play a critical role by offering comprehensive Investor Services that ensure compliance, transparency, and a superior investor experience.
+                As tokenization of real-world assets from real estate to private equity expands globally, RWA issuers must attract and retain investors seamlessly. Back-office support firms play a critical role by offering comprehensive Investor Services that ensure compliance, transparency, and a superior investor experience.
               </p>
             </CardContent>
           </Card>
