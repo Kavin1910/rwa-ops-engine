@@ -19,8 +19,8 @@ const Header = () => {
 
   const handleDownloadCapabilities = () => {
     const link = document.createElement('a');
-    link.href = '/Empowering-the-Future-of-Tokenized-Assets.pdf';
-    link.download = 'Empowering-the-Future-of-Tokenized-Assets.pdf';
+    link.href = '/Capability Deck - OpsWorks LLC.pdf';
+    link.download = 'Capability Deck - OpsWorks LLC.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
