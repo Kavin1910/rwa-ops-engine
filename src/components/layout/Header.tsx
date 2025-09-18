@@ -59,7 +59,7 @@ const Header = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm" asChild>
-              <Link to="/contact">Block my Calendar</Link>
+              <a href="https://calendly.com/shinu-mathew-opsworks/30min" target="_blank" rel="noopener noreferrer">Block my Calendar</a>
             </Button>
             <Button onClick={handleDownloadCapabilities} size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
               Download Capabilities Deck
@@ -97,7 +97,7 @@ const Header = () => {
               ))}
               <div className="pt-4 space-y-2">
                 <Button variant="outline" className="w-full" asChild>
-                  <Link to="/contact">Block my Calendar</Link>
+                  <a href="https://calendly.com/shinu-mathew-opsworks/30min" target="_blank" rel="noopener noreferrer">Block my Calendar</a>
                 </Button>
                 <Button 
                   onClick={handleDownloadCapabilities} 
