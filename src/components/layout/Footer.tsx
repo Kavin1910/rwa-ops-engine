@@ -66,12 +66,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><Link to="/investor-onboarding" className="hover:text-white text-left">Investor Onboarding & KYC</Link></li>
-              <li><Link to="/subscription-redemption" className="hover:text-white text-left">Subscription & Redemption</Link></li>
-              <li><Link to="/data-reporting" className="hover:text-white text-left">Data, Reporting & Audit Readiness</Link></li>
-              <li><Link to="/financial-accounting" className="hover:text-white text-left">Finance & Accounting Services</Link></li>
-              <li><Link to="/investor-relations" className="hover:text-white text-left">Investor Relations & Front Desk Support</Link></li>
-              <li><Link to="/staff-augmentation" className="hover:text-white text-left">Staff Augmentation</Link></li>
+              <li><Link to="/investor-onboarding" className="hover:text-white text-left" onClick={scrollToTop}>Investor Onboarding & KYC</Link></li>
+              <li><Link to="/subscription-redemption" className="hover:text-white text-left" onClick={scrollToTop}>Subscription & Redemption</Link></li>
+              <li><Link to="/data-reporting" className="hover:text-white text-left" onClick={scrollToTop}>Data, Reporting & Audit Readiness</Link></li>
+              <li><Link to="/financial-accounting" className="hover:text-white text-left" onClick={scrollToTop}>Finance & Accounting Services</Link></li>
+              <li><Link to="/investor-relations" className="hover:text-white text-left" onClick={scrollToTop}>Investor Relations & Front Desk Support</Link></li>
+              <li><Link to="/staff-augmentation" className="hover:text-white text-left" onClick={scrollToTop}>Staff Augmentation</Link></li>
             </ul>
           </div>
 
