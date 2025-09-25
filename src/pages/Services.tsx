@@ -70,18 +70,32 @@ const Services = () => {
   const engagementModels = [
     {
       plan: 'Launch Pod',
-      bestFor: 'MVPs, early-stage protocols',
-      includes: 'KYC, docs, investor onboarding'
+      bestFor: 'MVPs, early-stage protocols, or pilots entering the market',
+      includes: [
+        'KYC & investor documentation',
+        'Onboarding workflows',
+        'Subscription & redemption support'
+      ]
     },
     {
       plan: 'Growth Ops',
-      bestFor: 'Scaling platforms',
-      includes: 'Dedicated ops + Support'
+      bestFor: 'Platforms scaling their investor base and transaction volumes',
+      includes: [
+        'Dedicated operations and support team',
+        'Subscription & redemption management',
+        'Investor relations & helpdesk coverage',
+        'Finance & accounting workflows'
+      ]
     },
     {
       plan: 'Institutional Ops Desk',
-      bestFor: 'Regulated issuers, funds',
-      includes: 'Full-service fund ops, SLA support, analytics'
+      bestFor: 'Regulated issuers, funds, and institutional-grade platforms',
+      includes: [
+        'End-to-end fund operations',
+        'SLA-driven compliance & reporting',
+        'Audit & data readiness',
+        'Advanced analytics & performance insights'
+      ]
     }
   ];
 
@@ -200,15 +214,28 @@ const Services = () => {
           {/* Engagement Models */}
           <div className="mb-20">
             <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Engagement Models</h2>
+            <p className="text-xl text-gray-600 text-center mb-12 max-w-4xl mx-auto">
+              We tailor our operations support to match the stage and needs of your RWA tokenization journey.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {engagementModels.map((model, index) => (
-                <Card key={index} className="text-center">
+                <Card key={index} className="text-left">
                   <CardHeader>
-                    <CardTitle className="text-2xl text-blue-600">{model.plan}</CardTitle>
-                    <p className="text-gray-600">{model.bestFor}</p>
+                    <CardTitle className="text-2xl text-blue-600 mb-2">{model.plan}</CardTitle>
+                    <p className="text-gray-600 font-medium">Best For: {model.bestFor}</p>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700">{model.includes}</p>
+                    <div className="space-y-2">
+                      <p className="font-semibold text-gray-900 mb-3">Includes:</p>
+                      <ul className="space-y-2">
+                        {model.includes.map((item, itemIndex) => (
+                          <li key={itemIndex} className="text-gray-700 flex items-start">
+                            <span className="text-blue-600 mr-2">•</span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
