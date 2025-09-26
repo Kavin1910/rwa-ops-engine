@@ -36,8 +36,8 @@ const Index = () => {
           <div className="space-y-4 mb-8">
             <p className="text-xl text-gray-600">contact@opsworks.org</p>
             <p className="text-xl text-gray-600">www.opsworks.org</p>
-            <p className="text-lg text-gray-600">New York (HQ) | Bangalore (Delivery Center)</p>
-            <p className="text-lg text-gray-600">24/6 Global Support</p>
+            <p className="text-lg text-gray-600">Missouri (HQ) | Bangalore (Delivery Center)</p>
+            <p className="text-lg text-gray-600">24/5 Global Support</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-blue-900 text-white hover:bg-blue-800" asChild>
@@ -52,7 +52,7 @@ const Index = () => {
               className="border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white"
               onClick={handleDownloadCapabilities}
             >
-              View Pitch Deck
+              Download Capabilities Deck
             </Button>
           </div>
         </div>
